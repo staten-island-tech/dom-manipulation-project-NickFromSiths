@@ -1,0 +1,296 @@
+
+html {
+    background-image: linear-gradient(45deg, rgb(27, 27, 40), rgba(85, 85, 156, 0.7), rgb(27, 27, 40));
+    background-repeat: no-repeat;
+    font-family: 'Verdana', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .text-gradient{
+    font-size: 48px;
+    background-image: linear-gradient(45deg,rgb(16, 16, 65),rgba(10, 196, 209, 0.603) -5% ,rgb(16, 16, 65));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+  }
+  
+  .text-gradient_card{
+    font-size: 32px;
+    background-image: linear-gradient(45deg,rgba(16, 16, 65, 0.9),rgba(51, 18, 104, 0.653) -30% ,rgba(16, 16, 65, 0.9));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+  }
+  
+  .text-gradient_world_map{
+    font-size: 25px;
+    background-image: linear-gradient(45deg,rgba(16, 16, 65, 0.9),rgba(10, 196, 209, 0.3) -5% ,rgba(16, 16, 65, 0.9));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+  }
+  span {
+    content: '';  
+    background: fixed;
+    background-size: 30vmin, 100vmax;
+    color: transparent;
+    pointer-events: none;
+  }
+  /*--------------------------------------------------------------------------------*/
+  form {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+  }
+  
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  
+  #svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  
+  .button6 {
+    all: unset;
+    cursor: pointer;
+    width: 144px;
+    height: 144px;
+  }
+  /*--------------------------------------------------------------------------------*/
+  a {
+    text-decoration: none;
+  }
+  .button1 {
+    cursor: default;
+    width: 200px;
+    margin-bottom: 50px;
+    background-color: #141b4285;
+    border: transparent;
+    border-radius: 20px;
+  }
+  .button1:hover {
+    cursor: pointer;
+  }
+  .button2 {
+    cursor: default;
+    width: 200px;
+    margin-bottom: 50px;
+    background-color: #141b4285;
+    border: transparent;
+    border-radius: 7px;
+  }
+  .button2:hover {
+    cursor: pointer;
+  }
+  
+  
+  /*---------------------------------------- FLEX CONTAINER ----------------------------------------*/
+  
+  .flex-container{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-wrap: wrap; 
+    align-items: center;
+    width: 95vw;
+    margin: 80px auto; 
+    flex-direction: row;
+  }
+  
+  /*-------------------------------------------- CARDS --------------------------------------------*/
+  
+  .cards {
+    height: 600px;
+    width: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px transparent;
+    background-image: radial-gradient(#2f375f 10%, #424b77c7);
+    margin: 30px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    box-shadow: rgb(0, 0, 0);
+    box-shadow: 1px 12px 15px rgba(0, 0, 0, .4);
+  }
+  .card {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px transparent;
+    background-image: radial-gradient(#2f375f 10%, #424b77c7);
+    margin: 25px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: rgb(0, 0, 0);
+    box-shadow: 1px 12px 15px rgba(0, 0, 0, .4);
+  }
+  .card-text {
+    font-size:medium;
+  }
+  .card-title {
+    margin-top: 58px;
+  }
+  .worldmap_img {
+    height: 250px;
+    width: 475px;
+    pointer-events: none;
+  }
+  /*--------------------------------------- SVG images ---------------------------------------*/
+  svg path{
+    fill: #323b63;
+    stroke: rgb(16, 16, 43);
+    stroke-width: 0.1%;
+    transition: 0.4s;
+  }
+  svg path:hover{
+    fill: rgba(96, 225, 182, 0.726);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  svg:hover {
+    transition: 0.1s;
+    scroll-behavior: smooth;
+  }
+  /*--------------------------------------- Fine Tuning ---------------------------------------*/
+  .left-margin {
+    margin-left: 5px;
+  }
+  
+  /*--------------------------------------- TESTS/EXPERIMENTS ---------------------------------------*/
+  
+  
+  /* .circle {
+      display: block;
+      background: black;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      margin: 0;
+      background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    }
+    .stage {
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      margin: 20px;
+      perspective: 1200px;
+      perspective-origin: 50% 50%;
+    }
+    .ball .shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+      transform: rotateX(90deg) translateZ(-150px);
+      z-index: -1;
+    }
+    .ball {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border-radius: 50%;
+      position: relative;
+      background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
+      cursor: move;
+    }
+    .ball:-moz-drag-over{
+      rotate: translateX(-80px) translateY(-90px) skewX(-20deg);
+    }
+    .ball:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+    .ball .eight {
+      width: 110px;
+      height: 110px;
+      margin: 30%;
+      background: white;
+      border-radius: 50%;
+      transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+      position: absolute;
+    }
+    .ball .eight:before {
+      content: "8";
+      display: block;
+      position: absolute;
+      text-align: center;
+      height: 80px;
+      width: 100px;
+      left: 50px;
+      margin-left: -40px;
+      top: 44px;
+      margin-top: -40px;
+      color: black;
+      font-family: Arial;
+      font-size: 90px;
+      line-height: 104px;
+    }
+   
+  
+    .ball {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+    }
+    
+    .ball {
+      display: block;
+      transition: all 4s;
+    }
+    
+    .ball-holder:hover .ball {
+      transform: translateX(calc(100vw - 80px)) rotate(360deg);
+    }
+  */
+  
