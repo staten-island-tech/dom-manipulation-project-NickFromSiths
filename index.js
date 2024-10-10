@@ -1,8 +1,9 @@
 const DOMSelectors = {
   header: document.querySelector("h1"),
   cardHeader: document.querySelector(".card-header"),
-  button: document.querySelector(".btn"),
+  button: document.querySelector(".sub"),
   form: document.querySelector("form"),
+  container: document.querySelector(".container"),
 };
 
 DOMSelectors.button.addEventListener("click", function (event) {
