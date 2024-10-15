@@ -4,12 +4,14 @@ html, body, *{
     margin: 0;
     box-sizing: border-box;
 }
+
 html, body {
     height: 100%;
+    background-attachment: fixed;
 }
 html {
     background-image: linear-gradient(45deg, rgb(27, 27, 40), rgba(85, 85, 156, 0.7), rgb(27, 27, 40));
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-blend-mode: 100;
     font-family: 'Verdana', cursive;
     text-align: center;
