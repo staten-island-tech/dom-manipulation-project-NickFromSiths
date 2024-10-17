@@ -1,9 +1,10 @@
 const DOMSelectors = {
-  image: document.querySelector("img"),
-  cardHeader: document.querySelector(".card-header"),
+  image: document.querySelector("Image"),
+  cardHeader: document.querySelector("Title"),
   button: document.querySelector("btn"),
-  description: document.querySelector(".Description"),
+  description: document.querySelector("Description"),
   container: document.querySelector(".container"),
+  form: document.querySelector("form"),
 };
 
 // DOMSelectors.button.addEventListener("click", function (event) {
@@ -13,6 +14,7 @@ const DOMSelectors = {
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   console.log(document.querySelector("input").value);
+  // console.log(DOMSelectors.cardHeader);
   cards();
 });
 
@@ -28,6 +30,6 @@ function cards() {
 
   DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
-    `<div class="card"><h2 class="card-header">${card.header}</h2><img src="${card.img}"></div>`
+    `<div class="card"><h2 class="card-header">${card.header}</h2><img src="${card.img}" alt="" ></div>`
   );
 }
