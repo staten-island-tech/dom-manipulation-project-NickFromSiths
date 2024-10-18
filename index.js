@@ -1,16 +1,12 @@
 const DOMSelectors = {
   image: document.querySelector("Image"),
   cardHeader: document.querySelector("Title"),
-  button: document.querySelector("btn"),
+  button: document.querySelector(".sub"),
   description: document.querySelector("Description"),
   container: document.querySelector(".container"),
   form: document.querySelector("form"),
 };
 
-// DOMSelectors.button.addEventListener("click", function (event) {
-//   console.groupCollapsed(event.target.parentElement);
-//   event.target.parentElement.style.backgroundColor = "red";
-// });
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   console.log(document.querySelector(".Title").value);
@@ -18,8 +14,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   cards();
 });
 
-// document.formRemove()
-// h1.remove()
+
 
 function cards() {
   const card = [
@@ -33,3 +28,24 @@ function cards() {
     `<div class="card"><h2 class="card-header">${card.header}</h2><img src="${card.img}" alt="" ></div>`
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+// DOMSelectors.button.addEventListener("click", function (event) {
+//   console.groupCollapsed(event.target.parentElement);
+//   event.target.parentElement.style.backgroundColor = "red";
+// });
+
+
+
+
+// document.formRemove()
+// h1.remove()
