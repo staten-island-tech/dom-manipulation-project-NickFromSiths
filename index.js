@@ -13,7 +13,7 @@ const DOMSelectors = {
 // });
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log(document.querySelector("input").value);
+  console.log(document.querySelector(".Title").value);
   // console.log(DOMSelectors.cardHeader);
   cards();
 });
