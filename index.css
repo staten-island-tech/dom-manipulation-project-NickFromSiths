@@ -4,6 +4,7 @@ html, body, *{
     margin: 0;
     box-sizing: border-box;
 }
+/* NEEDED IN EVERY PROJECT */
 
 html, body {
     height: 100%;
@@ -52,7 +53,7 @@ form{
 }
 #remove {
     scale: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 input{
     color: black;
