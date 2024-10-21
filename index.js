@@ -44,7 +44,7 @@ function cards() {
 
   DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
   resetInput();
-  deletion();
+  deletecard();
 }
 
 function deletecard() {
