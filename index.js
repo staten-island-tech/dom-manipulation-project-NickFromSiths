@@ -4,7 +4,6 @@ const DOMSelectors = {
   button: document.querySelector(".sub"),
   description: document.querySelector("#description"),
   container: document.querySelector(".container"),
-
 };
 
 DOMSelectors.button.addEventListener("click", function (event) {
@@ -14,16 +13,16 @@ DOMSelectors.button.addEventListener("click", function (event) {
   cards();
 });
 
-
-function resetInput(){
-  const form = [DOMSelectors.image, DOMSelectors.cardHeader, DOMSelectors.description]
-  form.forEach(DOMSelectors => {
+function resetInput() {
+  const form = [
+    DOMSelectors.image,
+    DOMSelectors.cardHeader,
+    DOMSelectors.description,
+  ];
+  form.forEach((DOMSelectors) => {
     DOMSelectors.form.reset();
   });
 }
-
-
-
 
 function cards() {
   const card = {
@@ -33,9 +32,8 @@ function cards() {
   };
 
   console.log(card);
-  
-  const specific = 
-    `<div class="card"> 
+
+  const specific = `<div class="card"> 
       <div class="cardcontainer">
         <h2 class="Title">${card.header}</h2> 
         <p class="Description">${card.desc}</p> 
@@ -46,26 +44,28 @@ function cards() {
 
   DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
   resetInput();
-  deletecard();
-};
+  deletion();
+}
 
-function deletecard(){
-  const remov = document.querySelectorAll("#remove")
-  remov.forEach(button => {
-    button.addEventListener("click", function(event){
+function deletecard() {
+  const remov = document.querySelectorAll("#remove");
+  remov.forEach((button) => {
+    button.addEventListener("click", function (event) {
       event.preventDefault();
-      const card = button.closest(".card")
+      const card = button.closest(".card");
       card.remove();
-    })
+    });
   });
-};
-
-
+}
+function deletion() {
+  document
+    .querySelectorAll("#remove")
+    .addEventListener("click", function (event) {
+      document.querySelector(".card").remove();
+    });
+}
 
 //gpt was giving me code that some of it didnt even work
-
-
-
 
 // const removecard = document.querySelector("#remove");
 // // removecard.addEventListener("click", function(event){
@@ -74,26 +74,17 @@ function deletecard(){
 // //   card.remove();
 // // });
 
-
-
-
-
 // function remove(){
 
 // };
-  // remove();
-
+// remove();
 
 // DOMSelectors.container.Element.remove(specific);
-
 
 // DOMSelectors.button.addEventListener("click", function (event) {
 //   console.groupCollapsed(event.target.parentElement);
 //   event.target.parentElement.style.backgroundColor = "red";
 // });
-
-
-
 
 // document.formRemove()
 // h1.remove()
