@@ -57,15 +57,16 @@ function deletecard() {
     });
   });
 }
-function deletion() {
-  document
-    .querySelectorAll("#remove")
-    .addEventListener("click", function (event) {
-      document.querySelector(".card").remove();
-    });
-}
 
-//gpt was giving me code that some of it didnt even work
+// function deletion() {
+//   document
+//     .querySelectorAll("#remove")
+//     .addEventListener("click", function (event) {
+//       document.querySelector(".card").remove();
+//     });
+// }
+
+//gpt was giving me code that some of it didnt even work (for removing the button)
 
 // const removecard = document.querySelector("#remove");
 // // removecard.addEventListener("click", function(event){
